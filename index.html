@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/reset.css">
+
+</head>
+
+<body>
+
+    <div class="login">
+        <H1 id="title">Online Registration</H1>
+        <p id="subtitle">Please complete form below:</p>
+        <br><br>
+    </div>
+
+    <form>
+        <fieldset class="group">
+            <div class="campus">
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" name="Name" id="name" required>
+            </div>
+
+            <div class="campus">
+                <label for="surname"><strong>Surname:</strong></label>
+                <input type="text" name="Surname" id="surname" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <div class="campus">
+                <label for="sex" class="sex"><strong>Sex:</strong></label>
+                <label for="">
+                    <input type="radio" name="Sex" value="Sex" checked>Other
+                </label>
+                <label for="">
+                    <input type="radio" name="Sex" value="Sex">Male
+                </label>
+                <label for="">
+                    <input type="radio" name="Sex" value="Sex">Female
+                </label>
+            </div>
+
+            <div class="campus">
+                <label for="age"><strong>Age:</strong></label>
+                <input type="number" min="18" max="99" maxlength="2">
+            </div>
+
+            <div class="campus">
+                <label for="country"><strong>Country:</strong></label>
+                <select name="" id="Country">
+                    <option selected disabled value="">Select</option>
+                    <option value="">Australia</option>
+                    <option value="">Brazil</option>
+                    <option value="">USA</option>
+                    <option value="">Japan</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="dados_pessoais">
+
+            <div class="campus">
+                <label for="Phone"><strong>Phone number:</strong></label>
+                <input type="tel">
+            </div>
+
+            <div class="campus">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="Email" id="email">
+            </div>
+        </fieldset>
+
+        <div class="campus">
+            <br>
+            <label for=""><strong>Say more about you:</strong></label>
+            <textarea name="Experience" id="" cols="30" rows="6" style="width: 26em;" maxlength="300"></textarea>
+        </div>
+
+        <button type="submit" class="button">Continue</button>
+    </form>
+
+</body>
+
+</html>
